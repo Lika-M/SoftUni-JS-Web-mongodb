@@ -1,12 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        h1 {
+            margin: 20px;
+            text-align: center;
+        }
+
+        body {
+            background-color: lightgreen;
+        }
+
+        ul {
+            padding: 0;
+            list-style: none;
+            background-color: #fff;
+            box-shadow: 1px 1px 10px grey;
+        }
+
+        .nav {
+            display: flex;
+            background-color: blue;
+            padding: 15px;
+        }
+
+        .article {
+            padding: 20px;
+            box-shadow: 1px 1px 10px grey;
+
+        }
+
+        li {
+            margin-bottom: 20px;
+        }
+
+        a {
+            text-decoration: none;
+            margin: 20px 10px;
+            color: #fff;
+        }
+
+        input,
+        textarea {
+            height: 30px;
+            display: block;
+            width: 300px;
+        }
+
+        button {
+            display: flex;
+            background-color: blue;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            margin: 10px;
+        }
+    </style>
     <title>MongoDB - {{title}}</title>
 </head>
+
 <body>
+    <nav>
+        <ul class="nav">
+            <li><a href="/">Home</a></li>
+            <li><a href="/articles">Articles</a></li>
+        </ul>
+    </nav>
     {{{body}}}
 </body>
+
 </html>
